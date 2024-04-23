@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Three-Tier Application with Docker</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="App.css" />
+    <style>
+        body {
+    background-color: rgb(137, 179, 139);
+}
+    </style>
   </head>
-  <body>
-    <div class="container">
+  <body style="padding-top: 20px;">
+     <div class="container">
       <h1>Title: Three-Tier Application with Docker</h1>
       <p>
         This repository contains a three-tier application built using Docker,
@@ -263,14 +269,57 @@ volumes:
 </pre>
       <img src="images/Docker compose images.PNG" alt="Architecture Overview" />
 
+
+      <ol start="13">
+        <li>Add Docker Image to your account:</li>
+      </ol>
+      <pre>
+    <code id="pull">
+docker tag ia_vproweb:latest kathanshah1893/ia_vproweb:latest
+docker tag rabbitmq:latest kathanshah1893/rabbitmq:latest
+docker tag memcached:latest kathanshah1893/memcached:latest
+docker tag vprofiledb:latest kathanshah1893/vprofiledb:latest
+
+
+
+docker push kathanshah1893/ia_vproweb:latest
+docker push kathanshah1893/rabbitmq:latest
+docker push kathanshah1893/memcached:latest
+docker push kathanshah1893/vprofiledb:latest
+
+</code>
+        <span class="copy-icon" onclick="copyToClipboard('pull')">📋</span>
+</pre>
+
+
       <h2>Display Screenshot of the Website</h2>
       <h5>DashBoard</h5>
       <img src="images/dashbord.PNG" alt="Screenshot of the Website" />
       <h5>Database</h5>
       <img src="images/Database.PNG" alt="Screenshot of the Website" />
+
+      <h2>Github</h2>
+<pre>
+    <code id="github"><a href="https://github.com/kathan-shah1893">https://github.com/kathan-shah1893</a></code>
+        <span class="copy-icon" onclick="copyToClipboard('github')">📋</span>
+</pre>
+
+
+      <h2>Get My Image</h2>
+<pre>
+    <code id="doc-pull">
+        docker pull kathanshah1893/ia_vproweb:latest
+        docker pull kathanshah1893/rabbitmq:latest
+        docker pull kathanshah1893/memcached:latest
+        docker pull kathanshah1893/vprofiledb:latest
+    </code>
+        <span class="copy-icon" onclick="copyToClipboard('doc-pull')">📋</span>
+</pre>
+
+
       <div class="author">
         <h2>Author</h2>
-        <p><a href="https://github.com/kathan-shah1893">Kathan shsh</a></p>
+        <p><a href="https://github.com/kathan-shah1893">Kathan shah</a></p>
       </div>
 
       <div class="acknowledgements">
