@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="App.css" />
     <style>
         body {
-    background-color: rgb(137, 179, 139);
+    background-color: rgb(90, 134, 222);
 }
     </style>
   </head>
@@ -17,14 +17,13 @@
       <h1>Title: Three-Tier Application with Docker</h1>
       <p>
         This repository contains a three-tier application built using Docker,
-        utilizing a multi-container setup. The application consists of three
-        layers: presentation layer, application layer, and data layer.
+        utilizing a multi-container setup. This Application has two docker file one for NEXT.js and other for Mongo
       </p>
 
       <h2>Architecture Overview</h2>
       <img
         class="image-overlay"
-        src="https://github.com/kathan-shah1893/IA/assets/136159210/f434097f-4ec7-48c8-a3f0-e70025e0bb18"
+        src="data:image/png;base64,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"
         alt="Architecture Overview"
       />
 
@@ -43,296 +42,72 @@
 
       <h2>Prerequisites</h2>
       <ul>
-        <li>JDK 1.8 or later</li>
-        <li>Maven 3 or later</li>
-        <li>MySQL 5.6 or later</li>
+        <li>NPM</li>
+        <li>Next.js</li>
+        <li>Mongo</li>
       </ul>
 
       <h2>Technologies</h2>
       <ul>
-        <li>Spring MVC</li>
-        <li>Spring Security</li>
-        <li>Spring Data JPA</li>
-        <li>Maven</li>
-        <li>JSP</li>
-        <li>MySQL</li>
+        <li>Node</li>
+        <li>Express</li>
+        <li>Next</li>
+        <li>Mongo</li>
       </ul>
 
-      <h2>Database Setup</h2>
-      <p>Installation Steps for MySQL on Ubuntu 14.04:</p>
-      <pre><code>sudo apt-get update
-sudo apt-get install mysql-server</code></pre>
-      <p>Importing Database Dump:</p>
-      <ol>
-        <li>
-          Locate the <code>accountsdb.sql</code> file in the
-          <code>/src/main/resources</code> directory.
-        </li>
-        <li>
-          This file contains a MySQL dump of the database schema and data.
-        </li>
-        <li>
-          Run the following command to import the dump into the MySQL database:
-        </li>
+      <ol start="1">
+        <li>Create Docker file for next.js</li>
       </ol>
-      <pre><code>mysql -u &lt;user_name&gt; -p accounts &lt; accountsdb.sql</code></pre>
-
-      <h2>Getting Started</h2>
-      <h3>Prerequisites</h3>
-      <p>Docker installed on your machine</p>
-      <h3>Steps</h3>
-      <ol>
-        <li>Clone this repository to your local machine:</li>
-      </ol>
-
-      <pre>
-    <code id="clone-code">git clone https://github.com/kathan-shah1893/IA.git</code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('clone-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('clone-code')">📋</span>
-    <!-- </button> -->
-</pre>
-
+      <img src="3.png"></img>
       <ol start="2">
-        <li>Navigate to the project directory:</li>
+        <li>Now Create docker file for mongodb</li>
       </ol>
-      <pre>
-    <code id="navigate-code">cd IA</code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('navigate-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('navigate-code')">📋</span>
-    <!-- </button> -->
-</pre>
+
+      <img src="4.png"></img>
 
       <ol start="3">
-        <li>Database Dockerfile:</li>
+        <li>Now Build of the image for next.js</li>
       </ol>
-      <pre>
-    <code id="db-docker">
-        FROM mysql:8.0.33
-        LABEL "PROJECT"="VPROFILE"
-        LABEL "AUTHOR"="KATHAN"
 
-        ENV MYSQL_ROOT_PASSWORD="vprodbpass"
-        ENV MYSQL_DATABASE="accounts"
-
-        ADD db_backup.sql docker-entrypoint-initdb.d/db_backup.sql
-    </code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('build-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('db-docker')">📋</span>
-    <!-- </button> -->
-</pre>
+      <img src="2.png"></img>
 
       <ol start="4">
-        <li>OpenJDK Dockerfile:</li>
+        <li>Now Build of the image for mongodb</li>
       </ol>
-      <pre>
-    <code id="db-jdk">
-        FROM openjdk:11 AS BUILD_IMAGE
-        RUN apt update && apt install maven -y
-        RUN git clone https://github.com/devopshydclub/vprofile-project.git
-        RUN cd vprofile-project && git checkout docker &&  mvn install
 
-        FROM tomcat:9-jre11
-        RUN rm -rf /usr/local/tomcat/webapps/*
-        COPY --from=BUILD_IMAGE vprofile-project/target/vprofile-v2.war /usr/local/tomcat/webapps/ROOT.war
-        EXPOSE 8080
-        CMD ["catalina.sh","run"]
-    </code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('build-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('db-jdk')">📋</span>
-    <!-- </button> -->
-</pre>
+      <img src="5.png"></img>   
+      
+      <ol start="5">
+        <li>Verify the build images using docker images command</li>
+      </ol>
+
+      <img src="7.png"></img>   
 
       <ol start="5">
-        <li>Nginx Dockerfile:</li>
+        <li>Run the next.js image on port 3000</li>
       </ol>
-      <pre>
-    <code id="nginx-jdk">
-        FROM nginx
-        RUN rm /etc/nginx/conf.d/default.conf
-        COPY nginvproapp.conf /etc/nginx/conf.d/
-    </code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('build-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('nginx-jdk')">📋</span>
-    <!-- </button> -->
-</pre>
 
-      <ol start="6">
-        <li>Docker-compose.yml file:</li>
+      <img src="8.png"></img>   
+
+
+      <ol start="5">
+        <li>Opening the container in browser</li>
       </ol>
+
+      <img src="9.png"></img>   
       <pre>
-    <code id="meet">
-        version: '3.8'
-services:
-  vprodb:
-    build: ./Docker-files/db
-    image: vprocontainers/vprofiledb
-    container_name: vprodb
-    ports:
-      - "3306:3306"
-    volumes:
-      - vprodbdata:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWROD=vprodbpass
-  vprocache01:
-    image: memcached
-    ports:
-      - "11211:11211"
-  vpromq01:
-    image: rabbitmq
-    ports:
-      - "15672:15672"
-    environment:
-      - RABBITMQ_DEFAULT_USER=guest
-      - RABBITMQ_DEFAULT_PASS=guest
-  vproapp:
-    build: ./Docker-files/app
-    container_name: vproapp
-    ports:
-      - "8080:8080"
-    volumes:
-      - vproappdata:/usr/local/tomcat/webapps
-  vproweb:
-    build: ./Docker-files/web
-    container_name: vproweb
-    ports:
-      - "80:80"
-volumes:
-  vprodbdata:
-  vproappdata:
 
-    </code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('build-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('meet')">📋</span>
-    <!-- </button> -->
-</pre>
-
-      <ol start="7">
-        <li>Build the Docker images:</li>
-      </ol>
-      <pre>
-    <code id="build-code">docker-compose build</code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('build-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('build-code')">📋</span>
-    <!-- </button> -->
-</pre>
-
-      <img src="https://github.com/kathan-shah1893/IA_cloud/assets/136159210/2c8d6899-4bdb-46a7-9fd2-37bb7c44c096" alt="Architecture Overview" />
-
-      <ol start="8">
-        <li>Start the Docker containers:</li>
-      </ol>
-      <pre>
-    <code id="start-code">docker-compose up -d</code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('start-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('start-code')">📋</span>
-    <!-- </button> -->
-</pre>
-
-      <img src="https://github.com/kathan-shah1893/IA_cloud/assets/136159210/883b3f18-27f8-47cd-b32a-a607b32d9cbe" alt="Architecture Overview" />
-
-      <ol start="9">
-        <li>Access the application in your web browser:</li>
-      </ol>
-      <pre>
-      <code><a href="http://localhost:3000">http://localhost:3000</a></code>
-    </pre>
-      <ol start="10">
-        <li>Details About Docker images:</li>
-      </ol>
-      <pre>
-    <code id="build-code-image">docker images</code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('build-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('build-code-image')">📋</span>
-    <!-- </button> -->
-</pre>
-      <!-- <img src="./images/docker_images.PNG" alt="Architecture Overview" /> -->
-      <ol start="11">
-        <li>Details About Docker-Compose :</li>
-      </ol>
-      <pre>
-    <code id="build-code-ps">docker-Compose ps</code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('build-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('build-code-ps')">📋</span>
-    <!-- </button> -->
-</pre>
-      <!-- <img src="./images/docker_images.PNG" alt="Architecture Overview" /> -->
-
-      <ol start="12">
-        <li>Details About Docker-Compose Images:</li>
-      </ol>
-      <pre>
-    <code id="build-code-images">docker-Compose images</code>
-    <!-- <button class="copy-button" onclick="copyToClipboard('build-code')"> -->
-        <span class="copy-icon" onclick="copyToClipboard('build-code-images')">📋</span>
-    <!-- </button> -->
-</pre>
-      <img src="https://github.com/kathan-shah1893/IA_cloud/assets/136159210/709f88e5-c720-41a4-a7d5-fb182fa3b587" alt="Architecture Overview" />
-
-
-      <ol start="13">
-        <li>Add Docker Image to your account:</li>
-      </ol>
-      <pre>
-    <code id="pull">
-docker tag ia_vproweb:latest kathanshah1893/ia_vproweb:latest
-docker tag rabbitmq:latest kathanshah1893/rabbitmq:latest
-docker tag memcached:latest kathanshah1893/memcached:latest
-docker tag vprofiledb:latest kathanshah1893/vprofiledb:latest
-
-
-
-docker push kathanshah1893/ia_vproweb:latest
-docker push kathanshah1893/rabbitmq:latest
-docker push kathanshah1893/memcached:latest
-docker push kathanshah1893/vprofiledb:latest
-
-</code>
-        <span class="copy-icon" onclick="copyToClipboard('pull')">📋</span>
-</pre>
-
-
-      <h2>Display Screenshot of the Website</h2>
-      <h5>DashBoard</h5>
-      <img src="https://github.com/kathan-shah1893/IA_cloud/assets/136159210/f648801a-1086-407f-8b39-6c899790bfac" alt="Screenshot of the Website" />
-      <h5>Database</h5>
-      <img src="https://github.com/kathan-shah1893/IA_cloud/assets/136159210/e6590a19-a91e-4378-8794-adb28cad0e3e" alt="Screenshot of the Website" />
-
-      <h2>Github</h2>
-<pre>
-    <code id="github"><a href="https://github.com/kathan-shah1893">https://github.com/kathan-shah1893</a></code>
-        <span class="copy-icon" onclick="copyToClipboard('github')">📋</span>
-</pre>
-
-
-      <h2>Get My Image</h2>
-<pre>
-    <code id="doc-pull">
-        docker pull kathanshah1893/ia_vproweb:latest
-        docker pull kathanshah1893/rabbitmq:latest
-        docker pull kathanshah1893/memcached:latest
-        docker pull kathanshah1893/vprofiledb:latest
-    </code>
-        <span class="copy-icon" onclick="copyToClipboard('doc-pull')">📋</span>
-</pre>
-
+        <ol start="5">
+          <li>Pushing images to docker hub</li>
+        </ol>
+  
+        <img src="10.png"></img>  
 
       <div class="author">
         <h2>Author</h2>
-        <p><a href="https://github.com/kathan-shah1893">Kathan shah</a></p>
+        <p><a href="https://github.com/krunalpabari13">Krunal Pabari</a></p>
       </div>
 
-      <div class="acknowledgements">
-        <h2>Acknowledgements</h2>
-        <p>
-          This project is inspired by
-          <a href="https://github.com/hkhcoder/vprofile-project">Imran teli</a>
-          and their work on
-          <a href="https://github.com/hkhcoder/vprofile-project"
-            >(https://github.com/hkhcoder/vprofile-project)</a
-          >.
-        </p>
-      </div>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
